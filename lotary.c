@@ -15,7 +15,7 @@ int main(){
 	srand(tt);
 	strcpy(ss," ");
 	for(n=0;n<9;n++){
-		nn=(char) rand()/28;
+		nn=(char)((char) rand())/28;
 		sprintf(s,"%d",nn);
 		strcat(ss,s);
 	}
