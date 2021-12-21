@@ -12,6 +12,7 @@ int main(){
 	int nn;
 	time_t tt;
 	tt=time(NULL);
+	srand(tt);
 	strcpy(ss," ");
 	for(n=0;n<9;n++){
 		nn=(char) rand()/5;
