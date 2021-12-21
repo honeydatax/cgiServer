@@ -8,7 +8,7 @@
 int main(){
 	char ss[22];
 	char s[22];
-	int n;
+	long n;
 	int nn;
 	FILE *f;
 	strcpy(ss,"0");
@@ -21,13 +21,13 @@ int main(){
 	}
 		fgets(ss,10,f);
 		fclose(f);
-		n=atoi(ss);
+		n=atol(ss);
 		n=n+1;
 		sprintf(ss,"%d",n);
 		f=fopen("count.txt","w");
 			fprintf(f,"%s",ss);
 		fclose(f);
 	printf("Content-type:plain-text\r\n\r\n");
-	printf("\n%s\n",ss);
+	printf("%s",ss);
 	return 0;
 }
