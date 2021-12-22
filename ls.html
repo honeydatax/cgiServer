@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>
+			my CGI server
+		</title>
+	</head>
+	<body bgcolor="00000FF#" style="color:white" onload="setTimeout(reloads,5000)">
+		<iframe ID="F2" style="color:white" src="./cgi-bin/ls" height="70px" width="350px">
+		</iframe>
+		<iframe ID="F1" style="color:white" src="./siteMap.txt" height="400px" width="450px">
+		</iframe>
+		<script>
+			function reloads(){
+			 document.getElementById('F1')contentWindow.location.reload(true);
+			}
+		</script>
+			
+	</body>
+</html>
