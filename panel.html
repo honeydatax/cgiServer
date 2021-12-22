@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>
+			my CGI server
+		</title>
+	</head>
+	<body bgcolor="00000FF#" style="color:white">
+		<button onclick="reboots()" style="color:black">
+			reboot
+		</button>
+		<button onclick="shutdowns()" style="color:black">
+			shutdown
+		</button>
+		<button onclick="stops()" style="color:black" >
+			stops 
+		</button>
+		<script>
+			function reboots(){
+				window.location='./cgi-bin/restart'
+			}
+			function shutdowns(){
+				window.location='./cgi-bin/shutdown'
+			}
+			function stops(){
+				window.location='./cgi-bin/stop'
+			}
+
+		</script>	
+	</body>
+</html>
