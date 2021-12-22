@@ -6,7 +6,8 @@
 #include <unistd.h>
 
 int main(){
-	printf("Content-type:plain-text\r\n\r\n\n\n\n");
-	system ("ls -l");
+	printf("Content-type:plain-text\r\n\r\n\r\n\r\n\r\n\r");
+	system ("ls -l > siteMap.txt");
+	printf("\r\n\r\n\r\n\r\n\r\n\r");
 	return 0;
 }
