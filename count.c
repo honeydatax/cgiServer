@@ -23,7 +23,7 @@ int main(){
 		fclose(f);
 		n=atol(ss);
 		n=n+1;
-		sprintf(ss,"%d",n);
+		sprintf(ss,"%ld",n);
 		f=fopen("count.txt","w");
 			fprintf(f,"%s",ss);
 		fclose(f);
