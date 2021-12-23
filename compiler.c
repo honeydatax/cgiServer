@@ -26,10 +26,12 @@ int main(){
 	printf("Content-type:plain-text\r\n\r\n");
 	c=getenv(envi);
 	strcpy(envi,c);
-	sprintf(e,"curl http://%s > /tmp/%s.c",envi,ss);
+	sprintf(e,"timeout 15s curl http://%s > /tmp/%s.c",envi,ss);
 	system(e);
 	sprintf(e,"gcc -o %s /tmp/%s.c",ss,ss);
 	system(e);
+	sprintf(e,"rm /tmp/%s.c",ss);
+	system(e);
 	printf("http:/localhost:8080/%s",ss);
 	return 0;
-} 
+}
