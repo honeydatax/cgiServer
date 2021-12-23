@@ -28,7 +28,7 @@ int main(){
 	strcpy(envi,c);
 	sprintf(e,"curl http://%s > /tmp/%s.c",envi,ss);
 	system(e);
-	sprintf(e,"gcc -o %s > /tmp/%s.c",ss,ss);
+	sprintf(e,"gcc -o %s /tmp/%s.c",ss,ss);
 	system(e);
 	printf("http:/localhost:8080/%s",ss);
 	return 0;
