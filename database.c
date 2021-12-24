@@ -29,7 +29,7 @@ int main(){
 	replacec(envi);
 	f=fopen("/tmp/data.in","w");
 	fprintf(f,"insert into dt (txt)values('%s');\n",envi);
-	fprintf(f,"\nquit\n");
+	fprintf(f,"\n.quit\n");
 	fclose(f);
 	system("sqlite3 dd < /tmp/data.in");
 	printf("%s\r\n",envi);

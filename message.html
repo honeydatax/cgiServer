@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>
+			my CGI server
+		</title>
+	</head>
+	<body bgcolor="00000FF#" style="color:white">
+		<input ID="input1"  style="color:black">
+			
+		</input>
+		<p>
+		<button onclick="shelles()" style="color:black">
+			message
+		</button>
+		</p>
+		<script>
+			function shelles(){
+				b = document.getElementById('input1').value
+				a = b.replace(/ /g,'_')
+				window.location='./cgi-bin/database?'+a
+			}
+		</script>	
+	</body>
+</html>
