@@ -1,0 +1,5 @@
+create table dt (ID INTEGER PRIMARY KEY AUTOINCREMENT,txt varchar(50));
+insert into dt (txt)values('goodbye');
+insert into dt (txt)values('hello');
+select * from dt;
+.quit
