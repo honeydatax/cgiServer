@@ -33,5 +33,14 @@ int main(){
 	fclose(f);
 	system("sqlite3 dd < /tmp/data.in > siteMap.txt");
 	printf("%s\r\n",envi);
+	f=fopen("siteMap.txt","r");
+	if(f!=NULL){
+		while(feof(f)!=1){
+			fgets(envi,1024,f);
+			printf("%s\n",envi);
+		
+		}
+		fclose(f);
+	}
 	return 0;
 }
